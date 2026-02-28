@@ -3,13 +3,13 @@
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
 .utmp/
-/[Ll]ibrary/
-/[Tt]emp/
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
-/[Ll]ogs/
-/[Uu]ser[Ss]ettings/
+/WicHacks 2026/[Ll]ibrary/
+/WicHacks 2026/[Tt]emp/
+/WicHacks 2026/[Oo]bj/
+/WicHacks 2026/[Bb]uild/
+/WicHacks 2026/[Bb]uilds/
+/WicHacks 2026/[Ll]ogs/
+/WicHacks 2026/[Uu]ser[Ss]ettings/
 *.log
 
 # By default unity supports Blender asset imports, *.blend1 blender files do not need to be commited to version control.
