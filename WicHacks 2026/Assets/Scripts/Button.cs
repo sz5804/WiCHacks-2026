@@ -6,23 +6,14 @@ using UnityEngine.UI;
 /// </summary>
 public class Button : MonoBehaviour
 {
-    // Public fields
-    public Text buttonText;
-    
-    // The sprite will be a rectangle, or equivalent;
-    public GameObject button;
+    // tab to activate 
+    public GameObject activate;
 
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void OnClick()
     {
-        // ensures the text is where the button is
-        buttonText.transform.position = button.transform.position;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        // toggles active state of menus
+        activate.SetActive(true);
+        GameManager.Instance.activeMenu.SetActive(false);
+        GameManager.Instance.activeMenu = activate;
     }
 }
