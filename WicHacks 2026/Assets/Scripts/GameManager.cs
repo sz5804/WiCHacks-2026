@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] public bool updateCategory = false;
 
     [SerializeField] public Sprite activeSprite;
+    [SerializeField] public int activeSpriteIndex;
     [SerializeField] public Color activeColor;
     public static GameManager Instance { get; set; }
 

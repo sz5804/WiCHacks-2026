@@ -48,5 +48,6 @@ public class Button : MonoBehaviour
     public void SelectClothes()
     {
         GameManager.Instance.activeSprite = this.gameObject.GetComponent<Image>().sprite;
+        GameManager.Instance.activeSpriteIndex = transform.GetSiblingIndex();
     }
 }

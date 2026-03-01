@@ -166,6 +166,7 @@ GameObject:
   - component: {fileID: 5030917308495552816}
   - component: {fileID: 4673436645373543184}
   - component: {fileID: 8724142332285434697}
+  - component: {fileID: 5790949950778264182}
   m_Layer: 5
   m_Name: Clothes
   m_TagString: Untagged
@@ -276,9 +277,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Button, Assembly-CSharp
-        m_MethodName: OnClick
+      - m_Target: {fileID: 5790949950778264182}
+        m_TargetAssemblyTypeName: EquipClothes, Assembly-CSharp
+        m_MethodName: Equip
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -288,3 +289,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &5790949950778264182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7523572499618919306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f6e4ab1c6bf8ab4487186f39854b6ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseClothing: {fileID: 0}
+  category: 0
+  color: {r: 0, g: 0, b: 0, a: 0}
