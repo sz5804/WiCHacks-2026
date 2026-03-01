@@ -5,8 +5,11 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] public GameObject[] selectionMenus;
     [SerializeField] public GameObject activeMenu;
+
     [SerializeField] public Category activeCategory;
     [SerializeField] public Sprite[] activeSpriteList;
+    [SerializeField] public bool updateCategory = false;
+
     [SerializeField] public Sprite activeSprite;
     [SerializeField] public Color activeColor;
     public static GameManager Instance { get; set; }
@@ -37,25 +40,6 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        switch ((int)activeCategory)
-        {
-            case 0:
-                activeSpriteList = SpriteLibraryManager.Instance.hairSprites;
-                break;
-            case 1:
-                activeSpriteList = SpriteLibraryManager.Instance.dressSprites;
-                break;
-            case 2:
-                activeSpriteList = SpriteLibraryManager.Instance.topSprites; 
-                break;
-            case 3:
-                activeSpriteList = SpriteLibraryManager.Instance.bottomSprites;
-                break;
-            case 4:
-                activeSpriteList = SpriteLibraryManager.Instance.shoeSprites; 
-                break;
-            case 5:
-                break;
-        }
+        
     }
 }
