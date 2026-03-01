@@ -3015,6 +3015,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 7523572499618919306, guid: 173f6a45cdf8c714ea2de2e7d2d0e6bf, type: 3}
   menu: {fileID: 0}
+  closeMenu: {fileID: 1275383066}
 --- !u!1 &1151929193
 GameObject:
   m_ObjectHideFlags: 0

@@ -16,9 +16,11 @@ public class Button : MonoBehaviour
         GameManager.Instance.activeMenu.SetActive(false);
         // update values
         GameManager.Instance.activeMenu = activate;
-        if (GameManager.Instance.activeCategory != category)
+        if (GameManager.Instance.activeCategory != category && category != Category.Miscellaneous)
+        {
             GameManager.Instance.updateCategory = true;
-        GameManager.Instance.activeCategory = category;
+            GameManager.Instance.activeCategory = category;
+        }
         switch ((int)category)
         {
             case 0:

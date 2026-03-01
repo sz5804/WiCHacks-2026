@@ -46,6 +46,7 @@ public class ColorSelection : MonoBehaviour, IPointerDownHandler, IDragHandler
         if (itemDisplay != null)
         {
             itemDisplay.color = pickedColor;
+            GameManager.Instance.activeColor = pickedColor;
         }
     }
 }
