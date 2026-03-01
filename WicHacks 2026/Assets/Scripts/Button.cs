@@ -9,6 +9,7 @@ public class Button : MonoBehaviour
     // tab to activate 
     public GameObject activate;
     public Category category;
+
     public void OnClick()
     {
         // toggles active state of menus
@@ -16,5 +17,10 @@ public class Button : MonoBehaviour
         GameManager.Instance.activeMenu.SetActive(false);
         GameManager.Instance.activeMenu = activate;
         GameManager.Instance.activeCategory = category;
+    }
+
+    public void SelectClothes()
+    {
+        GameManager.Instance.activeSprite = this.gameObject.GetComponent<Image>().sprite;
     }
 }

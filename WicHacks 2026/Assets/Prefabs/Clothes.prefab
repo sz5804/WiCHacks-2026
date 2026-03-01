@@ -167,7 +167,7 @@ GameObject:
   - component: {fileID: 4673436645373543184}
   - component: {fileID: 8724142332285434697}
   m_Layer: 5
-  m_Name: HairButton
+  m_Name: Clothes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
