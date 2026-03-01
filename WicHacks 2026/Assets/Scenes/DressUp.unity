@@ -3615,9 +3615,11 @@ MonoBehaviour:
   - {fileID: 1237704032}
   - {fileID: 2011266313}
   - {fileID: 1044496754}
+  - {fileID: 1275383066}
   activeMenu: {fileID: 814400048}
   activeCategory: 0
   activeSpriteList: []
+  updateCategory: 0
   activeSprite: {fileID: 0}
   activeColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &1453343671
@@ -4032,8 +4034,8 @@ RectTransform:
   - {fileID: 1237704033}
   - {fileID: 551947564}
   - {fileID: 2011266314}
-  - {fileID: 1044496755}
   - {fileID: 1275383067}
+  - {fileID: 1044496755}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
