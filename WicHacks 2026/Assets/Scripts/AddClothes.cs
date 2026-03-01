@@ -5,12 +5,12 @@ public class AddClothes : MonoBehaviour
 {
     public GameObject prefab;
     public GameObject menu;
-    public GameObject closeMenu;
+
 
     private void OnEnable()
     { 
         if (GameManager.Instance != null)
-            menu = GameManager.Instance.selectionMenus[(int)GameManager.Instance.activeCategory];
+            menu = GameManager.Instance.menuContentAreas[(int)GameManager.Instance.activeCategory];
     }
     public void AddClothing()
     {
@@ -23,8 +23,5 @@ public class AddClothes : MonoBehaviour
         icon.sprite = GameManager.Instance.activeSprite;
         icon.color = GameManager.Instance.activeColor;
         // text maybe later?
-
-        // close menu
-        closeMenu.SetActive(false);
     }
 }

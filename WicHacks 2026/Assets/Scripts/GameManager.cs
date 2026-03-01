@@ -5,6 +5,7 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] public GameObject[] selectionMenus;
     [SerializeField] public GameObject activeMenu;
+    [SerializeField] public GameObject[] menuContentAreas;
 
     [SerializeField] public Category activeCategory;
     [SerializeField] public Sprite[] activeSpriteList;
