@@ -3,7 +3,8 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class ColorSelection : MonoBehaviour
+// this was made by AI
+public class ColorSelection : MonoBehaviour, IPointerDownHandler, IDragHandler
 {
     public Image itemDisplay;
     public Image colorSelect;
@@ -27,29 +28,24 @@ public class ColorSelection : MonoBehaviour
 
     private void PickColor(PointerEventData eventData)
     {
-        Rect textureRect = colorSelect.GetComponent<Rect>();
+        RectTransform rectTransform = colorSelect.GetComponent<RectTransform>();
 
-        //get the mouse position
-        Vector2 mousePosition = Event.current.mousePosition;
-
-        //if the mouse position is outside the texture being displayed on the screen, just exit out because we dont want to do anything.
-        if (mousePosition.x > textureRect.xMax || mousePosition.x < textureRect.x || mousePosition.y > textureRect.yMax || mousePosition.y < textureRect.y)
-        {
+        // Get local position within the image
+        Vector2 localCursor;
+        if (!RectTransformUtility.ScreenPointToLocalPointInRectangle(rectTransform, eventData.position, eventData.pressEventCamera, out localCursor))
             return;
-        }
 
-        //if we made it here, we know that the mouse is somewhere on the texture. Since we know this, we need to figure out a way to get the colour of the texture, wherever the mouse currently is. In order to do this, we need to calculate the UV coordinates of the mouse on the texture
-        float textureUPosition = (mousePosition.x - textureRect.x) / textureRect.width;
-        float textureVPosition = 1.0f - ((mousePosition.y - textureRect.y) / textureRect.height);
+        // Convert local position to UV coordinates (0-1 range)
+        float x = Mathf.Clamp01((localCursor.x + rectTransform.rect.width * 0.5f) / rectTransform.rect.width);
+        float y = Mathf.Clamp01((localCursor.y + rectTransform.rect.height * 0.5f) / rectTransform.rect.height);
 
-        //Once we have the UV coordinates, we use a function called GetPixelBilinear on the texture. This will return the colour of the texture at the given UV coordinates.
-        Color textureColour = colorWheel.GetPixelBilinear(textureUPosition, textureVPosition);
+        // Get the pixel color from the texture
+        Color pickedColor = colorWheel.GetPixelBilinear(x, y);
 
         // Update the preview image
         if (itemDisplay != null)
         {
-            itemDisplay.color = textureColour;
-            Debug.Log("color changed");
+            itemDisplay.color = pickedColor;
         }
     }
 }
