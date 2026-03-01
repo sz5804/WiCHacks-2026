@@ -7,12 +7,13 @@ using UnityEngine.UI;
 public class ColorSelection : MonoBehaviour, IPointerDownHandler, IDragHandler
 {
     public Image itemDisplay;
+    public bool changeDisplay = false;
     public Image colorSelect;
     public Texture2D colorWheel;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void OnEnable()
     {
-        if (GameManager.Instance != null)
+        if (GameManager.Instance != null && changeDisplay)
             itemDisplay.sprite = GameManager.Instance.activeSprite;
     }
 
