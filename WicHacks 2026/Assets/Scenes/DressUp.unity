@@ -559,11 +559,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activate: {fileID: 1455915399}
-<<<<<<< Updated upstream
-  category: 0
-=======
   category: 2
->>>>>>> Stashed changes
 --- !u!114 &259438779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -786,15 +782,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f9c5685661c6714d800044ccd605144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream
-  activate: {fileID: 56116798}
-  category: 0
---- !u!114 &401556698
-=======
   activate: {fileID: 1044496754}
   category: 2
 --- !u!114 &326812341
->>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2654,8 +2644,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activate: {fileID: 1442685518}
   category: 0
-<<<<<<< Updated upstream
-=======
 --- !u!1 &1151929193
 GameObject:
   m_ObjectHideFlags: 0
@@ -2692,7 +2680,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
->>>>>>> Stashed changes
 --- !u!1 &1166853910
 GameObject:
   m_ObjectHideFlags: 0
@@ -3630,10 +3617,7 @@ MonoBehaviour:
   - {fileID: 1044496754}
   activeMenu: {fileID: 814400048}
   activeCategory: 0
-<<<<<<< Updated upstream
-=======
   activeSpriteList: []
->>>>>>> Stashed changes
   activeSprite: {fileID: 0}
   activeColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &1453343671
@@ -4299,11 +4283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activate: {fileID: 1479125430}
-<<<<<<< Updated upstream
-  category: 0
-=======
   category: 3
->>>>>>> Stashed changes
 --- !u!114 &1700251183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4766,11 +4746,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activate: {fileID: 1237704032}
-<<<<<<< Updated upstream
-  category: 0
-=======
   category: 4
->>>>>>> Stashed changes
 --- !u!114 &1889969562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5026,11 +5002,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activate: {fileID: 1187527972}
-<<<<<<< Updated upstream
-  category: 0
-=======
   category: 1
->>>>>>> Stashed changes
 --- !u!114 &1929018699
 MonoBehaviour:
   m_ObjectHideFlags: 0
