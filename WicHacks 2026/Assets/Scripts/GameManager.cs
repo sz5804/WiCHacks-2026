@@ -5,6 +5,9 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] public GameObject[] selectionMenus;
     [SerializeField] public GameObject activeMenu;
+    [SerializeField] public Category activeCategory;
+    [SerializeField] public Sprite activeSprite;
+    [SerializeField] public Color activeColor;
     public static GameManager Instance { get; set; }
 
     void Awake()
